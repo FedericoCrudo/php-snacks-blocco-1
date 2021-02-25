@@ -6,7 +6,7 @@
     if( empty($name)|| empty($email)|| empty($age)){
         $message="Si prega di compilare i campi";
     }
-    elseif(  !(strlen($name)>3 && (strpos($email,'@') && strpos($email,'.')) && (int)(is_numeric($age)))){
+    elseif(  !(strlen($name)>3 && (strpos($email,'@') && strpos($email,'.')) && is_numeric($age)) ){
         $message="Accesso Negato ";
     }
 
